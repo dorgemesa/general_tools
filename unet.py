@@ -48,6 +48,9 @@ class DecoderBlock(nn.Module):
         x = torch.cat([x2, x1], dim=1)
         return self.decodblock(x)
 
+
+
+
 class OutConv(nn.Module):
     def __init__(self, in_ch, out_ch):
         super(OutConv, self).__init__()
